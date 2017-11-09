@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/resultat_position_text_view"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintRight_toLeftOf="@+id/nom_bateau_text_view"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nom_bateau_text_view"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/proprietaire_text_view"
+        android:layout_marginRight="8dp" />
+
+    <TextView
+        android:id="@+id/nom_bateau_text_view"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:text="TextView"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/resultat_club_nom"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="49dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="49dp"
+        android:layout_marginRight="49dp" />
+
+    <TextView
+        android:id="@+id/proprietaire_text_view"
+        android:layout_width="0dp"
+        android:layout_height="16dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintRight_toLeftOf="@+id/resultat_temps_composé"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        android:layout_marginEnd="7dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintTop_toBottomOf="@+id/resultat_position_text_view"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView9"
+        android:layout_marginRight="7dp" />
+
+    <TextView
+        android:id="@+id/resultat_club_nom"
+        android:layout_width="100dp"
+        android:layout_height="17dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/nom_bateau_text_view"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/nom_bateau_text_view" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="club:"
+        app:layout_constraintRight_toLeftOf="@+id/resultat_club_nom"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="54dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temp Composé:"
+        android:textStyle="bold"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/resultat_temps_composé"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/resultat_temps_composé"
+        android:layout_width="144dp"
+        android:layout_height="19dp"
+        android:text="TextView"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="94dp"
+        android:layout_marginEnd="94dp"
+        app:layout_constraintRight_toRightOf="@+id/resultat_club_nom"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/resultat_club_nom"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/nom_bateau_text_view"
+        android:layout_marginLeft="94dp"
+        android:layout_marginRight="94dp" />
+
+</android.support.constraint.ConstraintLayout>
